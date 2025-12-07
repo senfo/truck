@@ -43,7 +43,6 @@ public class PlayerController : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -55,7 +54,6 @@ public class PlayerController : MonoBehaviour
         this.transform.Translate(Vector3.forward * Time.deltaTime * speed);
 
         // Sets the vehicle direction based on the turn speed
-        //this.transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
-        print("Poop sticks: " + horizontalInput);
+        this.transform.Translate(Vector3.right * Time.deltaTime * turnSpeed * horizontalInput);
     }
 }
